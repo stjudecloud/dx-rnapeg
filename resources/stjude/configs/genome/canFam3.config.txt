@@ -1,0 +1,14 @@
+# canFam3 config	
+GENOME_ROOT	/datasets/public/genomes/Canis_familiaris/canFam3
+FASTA	/datasets/public/genomes/Canis_familiaris/canFam3/FASTA/canFam3.fa
+FASTA_CHR	/datasets/public/genomes/Canis_familiaris/canFam3/FASTA/chromosomes
+NIB	/datasets/public/genomes/Canis_familiaris/canFam3/NIB
+TWOBIT	/datasets/public/genomes/Canis_familiaris/canFam3/2BIT/canFam3.2bit
+#(infer as $FASTA.dict) SAMHEADER	$GENOME_ROOT/SUPPORT/seqdict.sam
+CHR_LENGTHS	/datasets/public/genomes/Canis_familiaris/canFam3/SUPPORT/chromosome_lengths.txt
+CHR_LENGTHS_DELIM	 
+CHR_SIZES	/datasets/public/genomes/Canis_familiaris/canFam3/SUPPORT/canonical_chr_sizes.txt
+
+WG_BWA_DB	/datasets/public/genomes/Canis_familiaris/canFam3/BWA/canFam3.fa
+CHR2GENE	/datasets/public/genomes/Canis_familiaris/canFam3/SUPPORT/chr2gene
+DBSNP	/datasets/public/genomes/Canis_familiaris/canFam3/SUPPORT/dbSNP.blob

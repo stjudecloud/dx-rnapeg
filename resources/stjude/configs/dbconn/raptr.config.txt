@@ -1,0 +1,5 @@
+DSN	
+PASSFILE	~/.db_pwd/raptr.txt
+USER	SELF
+PASS	PROMPT
+INIT_COMMAND	SET SCHEMA 'raptr'

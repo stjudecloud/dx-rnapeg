@@ -1,0 +1,5 @@
+# VIS detection config
+SITE_ANNOS	/nfs_exports/genomes/1/projects/LAMPCRSEQ/Greene/BucketIntermediate/FindVis/site_annos.txt
+
+# Extra submission arguments
+AFC_ARGS_01	-app picard-lsf

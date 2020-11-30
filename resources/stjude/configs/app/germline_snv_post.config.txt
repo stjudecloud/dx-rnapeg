@@ -1,0 +1,9 @@
+# germline snv post config
+
+# Extra submission arguments
+AFC_ARGS_01	-app snv-germline-anno
+AFC_ARGS_02	-app file-merge
+AFC_ARGS_03	-app file-merge
+AFC_ARGS_04	-app snv-germline-check
+AFC_ARGS_05	-app file-merge
+AFC_ARGS_06	-app snv-germline-final-anno

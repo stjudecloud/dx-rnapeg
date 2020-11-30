@@ -1,0 +1,6 @@
+FLU_BASE	/research/dept/compbio/flu/reference_data/
+FLU_MOD_GENOME	/research/dept/compbio/flu/reference_data//flu_mod_99pct.genome
+FLU_MOD_GENOME_FILE	/research/dept/compbio/flu/reference_data//flu_mod_99pct_genome.file
+FLU_MOD_FA	/research/dept/compbio/flu/reference_data//flu_mod_99pct.fa
+GMAPPER_PREFIX	/research/dept/compbio/flu/reference_data//flu_mod_99pct
+FLU_METADATA	/research/dept/compbio/flu/reference_data//genomeset_mod.dat

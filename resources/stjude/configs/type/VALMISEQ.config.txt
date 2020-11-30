@@ -1,0 +1,8 @@
+# Sequence analysis pipeline configuration for VALMISEQ type	
+	
+# List of emails to be notified when mapping, coverage, SNP, and CREST completes	
+TYPE_MAPPING_NOTIFICATIONS_EMAIL_LIST	gang.wu@stjude.org,xiang.chen@stjude.org,michael.edmonson@stjude.org
+TYPE_COV_COMPLETION_NOTIFICATION_EMAIL_LIST	gang.wu@stjude.org
+TYPE_SNV_COMPLETION_NOTIFICATION_EMAIL_LIST	gang.wu@stjude.org
+TYPE_CONSERTING_COMPLETION_NOTIFICATION_EMAIL_LIST	
+TYPE_CREST_COMPLETION_NOTIFICATION_EMAIL_LIST	gang.wu@stjude.org

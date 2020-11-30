@@ -1,0 +1,21 @@
+# Alignment runs configuration file
+#
+# Important: line order matters in this file.  In the resolve-merge step,
+# preference is given to mappings from earlier in the list.
+#
+# Explanation of columns:
+# name: any valid file path component, but MUST BE UNIQUE; used in file paths
+#       under the align dir
+# input: input format:  ubam or fastq
+# make_script_*: name of the make_script script for the step (must be in path)
+# DB_Name: name of the database, used as a prefix in the genome config file
+# submission_params: sent to submission command of queue system (this is the
+#                    only column that may contain whitespace
+#
+#name            input  make_script_*                             DB_Name     submission_params
+#-----------------------------------------------------------------------------------------------------------------------
+RefSeq.nm	ubam	make_script_bwa_alignxe_ubam_qn_xlate.sh	REFSEQ_NM	-app mapping-rna-align-rsnm
+RefSeq.alt_exon	ubam	make_script_bwa_alignxe_ubam_qn_xlate.sh	REFSEQ_AE	-app mapping-rna-align-rsae
+AceView.nm	ubam	make_script_bwa_alignxe_ubam_qn_xlate.sh	ACEVIEW_NM	-app mapping-rna-align-avnm
+WG	ubam	make_script_bwa_alignxe_ubam_qn.sh	WG	-app mapping-rna-align-wg
+STAR	fastq	make_script_star_alignxe_fq_qn.sh	WG	-app mapping-rna-align-star

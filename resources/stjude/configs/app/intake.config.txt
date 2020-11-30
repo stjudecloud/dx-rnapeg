@@ -1,0 +1,32 @@
+# Target number of reads per FASTQ file
+TARGET_FASTQ_READ_COUNT	2000000
+# Number of reads per FASTQ file at which to split into smaller files
+FASTQ_READ_COUNT_CUTOFF	8000000
+
+# Number of reads to sample from FASTQ for adapter determination
+ADAPTER_SAMPLE_SIZE	10000
+# Number of reads that must contain adapter to trim
+ADAPTER_CUTOFF	1000
+
+# Default minimum read length to keep when trimming
+DEFAULT_MIN_TRIMMED_LENGTH	20
+
+# Step parameters for setup_intake_run2.sh
+AFC_ARGS_01	-app intake-organize
+AFC_ARGS_02	-app intake-find-adapter
+AFC_ARGS_03	
+AFC_ARGS_04	
+AFC_ARGS_05	-app intake-trimming
+AFC_ARGS_06	-app intake-fastq-to-sam
+AFC_ARGS_07	
+
+# Root path to the directory contains intake config files
+INTAKE_CONFIG_ROOT	
+
+EMAIL	NGSAnalysisOperationsTeam@STJUDE.ORG
+
+# Automation group email list
+AG_EMAIL_LIST	
+
+# Sequencing facility contact and automation group contact
+SF_AG_EMAIL_LIST	

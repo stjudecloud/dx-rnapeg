@@ -1,0 +1,12 @@
+# xenocp config
+
+# Extra submission arguments
+AFC_ARGS_01	
+AFC_ARGS_02	
+AFC_ARGS_03	
+AFC_ARGS_04	
+AFC_ARGS_05	-M 6400
+AFC_ARGS_06	
+AFC_ARGS_07	
+AFC_ARGS_08	-M 5800 -R "scratch_local>200 rusage[scratch_local=200]"
+

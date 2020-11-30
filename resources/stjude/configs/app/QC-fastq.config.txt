@@ -1,0 +1,2 @@
+AFC_ARGS_02	-R "span[hosts=1]" -n 4
+AFC_ARGS_03	-R "span[hosts=1]" -n 4 -M 5000

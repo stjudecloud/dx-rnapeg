@@ -1,0 +1,8 @@
+# mapping-standard config	
+	
+# Default XE option (pe/se/auto)	
+DEFAULT_XE_OPT	pe
+	
+# Extra submission arguments	
+AFC_ARGS_01	-app mapping-dna-align
+AFC_ARGS_02	-app mapping-dna-finish

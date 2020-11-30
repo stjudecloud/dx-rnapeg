@@ -1,0 +1,15 @@
+# Notifications configuration file
+#
+# This file is whitespace-separated tabular text.
+#
+# Explanation of columns:
+# name: notification list name
+# type: sequencing type to which this entry applies (* for all)
+# project: project to which this entry applies (* for all)
+# email: email address
+#
+#name                         type        project             email
+#-----------------------------------------------------------------------------------------------------------------------
+coverage_post_completion      *           *                   pankaj.gupta@stjude.org
+coverage_post_completion      *           *                   andrew.thrasher@stjude.org
+coverage_post_completion      *           *                   michael.rusch@stjude.org

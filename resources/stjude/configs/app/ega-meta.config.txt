@@ -1,0 +1,5 @@
+# EGA metadata prep config
+
+
+# Extra submission arguments
+AFC_ARGS_01	-q pcgp_heavy_io

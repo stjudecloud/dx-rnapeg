@@ -1,0 +1,9 @@
+# Crest (research) config
+
+# Array-for-commandfile script	
+AFC_SCRIPT	bsub_array_for_cmdfile.sh
+
+# Steps in this pipeline
+AFC_STEPS	09 10 11 12 13 14 15 16
+
+CREST_COMPLETION_NOTIFICATION_EMAIL_LIST	michael.rusch@stjude.org,pankaj.gupta@stjude.org,andrew.thrasher@stjude.org,wilson.smith@stjude.org

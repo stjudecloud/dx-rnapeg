@@ -1,0 +1,52 @@
+# Zv9 (Zebrafish) config	
+FASTA	/nfs_exports/genomes/1/Danio_rerio/Zv9/FASTA/Zv9.fa
+FASTA_CHR	/nfs_exports/genomes/1/Danio_rerio/Zv9/FASTA/chromosomes
+NIB	/nfs_exports/genomes/1/Danio_rerio/Zv9/NIB
+TWOBIT	/nfs_exports/genomes/1/Danio_rerio/Zv9/2BIT/Zv9.2bit
+DBSNP	/nfs_exports/genomes/1/Danio_rerio/Zv9/SUPPORT/dbsnp_binary_v2.blob
+CHR_LENGTHS	/nfs_exports/genomes/1/Danio_rerio/Zv9/SUPPORT/chromosome_lengths.txt
+CHR_LENGTHS_DELIM	 
+CHR_SIZES	/nfs_exports/genomes/1/Danio_rerio/Zv9/SUPPORT/canonical_chr_sizes.txt
+CHR2GENE	/nfs_exports/genomes/1/Danio_rerio/Zv9/SUPPORT/chr2gene
+#BLAT_PORT	50037
+#EXON2GENE	/nfs_exports/genomes/1/Danio_rerio/Zv9/mRNA/UCSC/HG19_Unique_Exons.txt
+#JUNCTION2GENE	/nfs_exports/genomes/1/Danio_rerio/Zv9/mRNA/Combined/all_junct2gene.txt 
+#COMBINED_REFFLAT	/home/medmonso/work/gang/rnapeg_zebrafish/all_refFlats.txt
+# MNE: temporary hack
+COMBINED_REFFLAT	/nfs_exports/genomes/1/Danio_rerio/Zv9/mRNA/Combined/all_refFlats.txt
+	
+# This value is also used twice down below, but must be specified each time in	
+# case of selective loading	
+REFSEQ_REFFLAT	/nfs_exports/genomes/1/Danio_rerio/Zv9/mRNA/RefSeq/refFlat-sharp.txt
+
+# Specify which DBs to use for this genome  (required variable)
+DB_USED	RefSeq.nm RefSeq.alt_exon STAR WG
+	
+#ACEVIEW_NM_DB_FASTA	/nfs_exports/genomes/1/Danio_rerio/Zv9/mRNA/AceView/AceView.ucsc.lifted-nm.fa
+#ACEVIEW_NM_BWA_DB	/nfs_exports/genomes/1/Danio_rerio/Zv9/mRNA/AceView/AceView.ucsc.lifted-nm.fa
+#ACEVIEW_NM_REFFLAT	/nfs_exports/genomes/1/Danio_rerio/Zv9/mRNA/AceView/AceView.ucsc.lifted.txt
+#ACEVIEW_NM_NAME_FMT	acc
+	
+REFSEQ_NM_DB_FASTA	/nfs_exports/genomes/1/Danio_rerio/Zv9/mRNA/RefSeq/refFlat-sharp-nm.fa
+REFSEQ_NM_BWA_DB	/nfs_exports/genomes/1/Danio_rerio/Zv9/mRNA/RefSeq/refFlat-sharp-nm.fa
+REFSEQ_NM_REFFLAT	/nfs_exports/genomes/1/Danio_rerio/Zv9/mRNA/RefSeq/refFlat-sharp.txt
+REFSEQ_NM_NAME_FMT	acc
+	
+REFSEQ_AE_DB_FASTA	/nfs_exports/genomes/1/Danio_rerio/Zv9/mRNA/RefSeq/refFlat-sharp-alt_exon.fa
+REFSEQ_AE_BWA_DB	/nfs_exports/genomes/1/Danio_rerio/Zv9/mRNA/RefSeq/refFlat-sharp-alt_exon.fa
+REFSEQ_AE_REFFLAT	/nfs_exports/genomes/1/Danio_rerio/Zv9/mRNA/RefSeq/refFlat-sharp.txt
+REFSEQ_AE_NAME_FMT	cust
+	
+WG_BWA_DB	/nfs_exports/genomes/1/Danio_rerio/Zv9/BWA/Zv9.fa
+	
+# STAR	
+WG_STAR_DB	/nfs_exports/genomes/1/Danio_rerio/Zv9/STAR
+	
+# Bowtie	
+WG_BOWTIE_DB	/nfs_exports/genomes/1/Danio_rerio/Zv9/BOWTIE/Zv9
+	
+# RNA-Seq mapping	
+WINDOWS	/nfs_exports/genomes/1/Danio_rerio/Zv9/SUPPORT/windows.txt
+MIN_EMPTY_SEU_FASTA	20 -- Need to determine experimentally
+MAX_EMPTY_SEU_FASTA	29 -- Need to determine experimentally
+	

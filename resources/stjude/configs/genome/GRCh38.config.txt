@@ -1,0 +1,175 @@
+# GRCh38 config	
+GENOME_ROOT	...MUSTOVERRIDE.../GRCh38_no_alt
+
+FASTA	...MUSTOVERRIDE.../GRCh38_no_alt/FASTA/GRCh38_no_alt.fa
+FASTA_CHR	...MUSTOVERRIDE.../GRCh38_no_alt/FASTA/chromosomes
+NIB	...MUSTOVERRIDE.../GRCh38_no_alt/NIB
+TWOBIT	...MUSTOVERRIDE.../GRCh38_no_alt/2BIT/GRCh38_no_alt.2bit
+
+CHR2GENE	...MUSTOVERRIDE.../GRCh38_no_alt/chr2gene
+
+#(infer as $FASTA.dict) SAMHEADER	$GENOME_ROOT/SUPPORT/seqdict.sam
+CHR_LENGTHS	...MUSTOVERRIDE.../GRCh38_no_alt/SUPPORT/chromosome_lengths.txt
+CHR_LENGTHS_DELIM	 
+CHR_SIZES	...MUSTOVERRIDE.../GRCh38_no_alt/SUPPORT/canonical_chr_sizes.txt
+CHR_INFO	...MUSTOVERRIDE.../GRCh38_no_alt/SUPPORT/chromosomes.txt
+
+# This value is also used twice down below, but must be specified each time in
+# case of selective loading
+REFSEQ_REFFLAT	...MUSTOVERRIDE.../GRCh38_no_alt/mRNA/RefSeq/refFlat-sharp.txt
+
+# Specify which DBs to use for this genome  (required variable)
+DB_USED	RefSeq.nm RefSeq.alt_exon STAR WG
+	
+REFSEQ_NM_DB_FASTA	...MUSTOVERRIDE.../GRCh38_no_alt/mRNA/RefSeq/refFlat-sharp-nm.fa
+REFSEQ_NM_BWA_DB	...MUSTOVERRIDE.../GRCh38_no_alt/mRNA/RefSeq/refFlat-sharp-nm.fa
+REFSEQ_NM_REFFLAT	...MUSTOVERRIDE.../GRCh38_no_alt/mRNA/RefSeq/refFlat-sharp.txt
+REFSEQ_NM_NAME_FMT	acc
+	
+REFSEQ_AE_DB_FASTA	...MUSTOVERRIDE.../GRCh38_no_alt/mRNA/RefSeq/refFlat-sharp-alt_exon.fa
+REFSEQ_AE_BWA_DB	...MUSTOVERRIDE.../GRCh38_no_alt/mRNA/RefSeq/refFlat-sharp-alt_exon.fa
+REFSEQ_AE_REFFLAT	...MUSTOVERRIDE.../GRCh38_no_alt/mRNA/RefSeq/refFlat-sharp.txt
+REFSEQ_AE_NAME_FMT	cust
+
+WG_BWA_DB	...MUSTOVERRIDE.../GRCh38_no_alt/BWA/GRCh38_no_alt.fa
+# STAR	
+WG_STAR_DB	...MUSTOVERRIDE.../GRCh38_no_alt/STAR
+	
+# Bowtie	
+WG_BOWTIE_DB	...MUSTOVERRIDE.../GRCh38_no_alt/BOWTIE
+	
+# RNA-Seq mapping	
+WINDOWS	...MUSTOVERRIDE.../GRCh38_no_alt/SUPPORT/windows.txt
+MIN_EMPTY_SEU_FASTA	20
+MAX_EMPTY_SEU_FASTA	31
+
+# FusionBuilder
+ENHANCERS_FOR_FUSION_BUILDER	...MUSTOVERRIDE.../GRCh38_no_alt/enhancers/enhancers_for_fusion_builder.bed
+ENHANCERS_UPSTREAM_MARGIN	1000000
+ENHANCERS_DOWNSTREAM_MARGIN	1000000
+
+REFSEQ_DIR	...MUSTOVERRIDE.../GRCh38_no_alt/NCBI/RefSeq
+
+GENE_TRANSCRIPT_MATRIX	...MUSTOVERRIDE.../GRCh38_no_alt/NCBI/RefSeq/gene_transcript_matrix.withNM.mod
+# is this really genome specific?  Isn't it more organism-specific? (MNE)
+DBSNP	...MUSTOVERRIDE.../GRCh38_no_alt/SUPPORT/snp142_binary.blob
+
+BLAT_HOST	sjblat
+BLAT_PORT	50138
+
+# GATK
+GATK_REGIONS	...MUSTOVERRIDE.../GRCh38_no_alt/GATK/regions.txt
+GATK_DBSNP	...MUSTOVERRIDE.../GRCh38_no_alt/GATK/dbsnp_144.hg38.vcf.gz
+GATK_DBSNP_129	...MUSTOVERRIDE.../GRCh38_no_alt/GATK/Homo_sapiens_assembly38.variantEvalGoldStandard.vcf.gz
+MILL_INDEL	...MUSTOVERRIDE.../GRCh38_no_alt/GATK/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz
+THOUSAND_GENOMES_INDEL	...MUSTOVERRIDE.../GRCh38_no_alt/GATK/Homo_sapiens_assembly38.known_indels.vcf.gz
+THOUSAND_GENOMES_SNP	...MUSTOVERRIDE.../GRCh38_no_alt/GATK/1000G_phase1.snps.high_confidence.hg38.vcf.gz
+GATK_OMNI	...MUSTOVERRIDE.../GRCh38_no_alt/GATK/1000G_omni2.5.hg38.vcf.gz
+GATK_HAPMAP	...MUSTOVERRIDE.../GRCh38_no_alt/GATK/hapmap_3.3.hg38.vcf.gz
+GATK_CHR	...MUSTOVERRIDE.../GRCh38_no_alt/GATK/GRCh38.chr.ctg.txt
+
+# Bambino
+ACEVIEWER_ARGS	-db-server sjm5vlpgenomeb01 -db-database hg38 -db-user LDAP_BAMViewer_N -db-password "p'OWIBzEwT)3%c"
+
+# For tumor-only CREST
+CREST_GENERIC_CONTROL_BAM	...MUSTOVERRIDE.../GRCh38_no_alt/CREST/generic_control/bam/SJNBL030002_G1.bam
+CREST_GENERIC_CONTROL_SCLIP_FILE	...MUSTOVERRIDE.../GRCh38_no_alt/CREST/generic_control/crest-sclips/SJNBL030002_G1.cover
+
+#localized discordant read pair check for SV detection
+IMPORTANT_FUSIONS	...MUSTOVERRIDE.../GRCh38_no_alt/DISCORDANT/important_lesions_locations_with_curation_v4.txt
+
+# Crest-related 	
+MERGED_SV_DB_DNA	/research/rgs01/resgen/prod/tartan/runs/ad_hoc/reference_import-Tm4OgjZi/output/reference/Homo_sapiens/GRCh37-lite/GERM_SV/merged_SV_db_dna.txt
+MERGED_SV_DB_RNA	/research/rgs01/resgen/prod/tartan/runs/ad_hoc/reference_import-Tm4OgjZi/output/reference/Homo_sapiens/GRCh37-lite/GERM_SV/merged_SV_db_rna.txt
+	
+# Crest-filter related
+DGV_DB	/research/rgs01/resgen/prod/tartan/index/reference/Homo_sapiens/GRCh37-lite/SUPPORT/DGV-DB-2013-07-23.txt
+SV_DB_DIR	/research/rgs01/resgen/prod/tartan/index/reference/Homo_sapiens/GRCh37-lite/CREST/CREST_FILTER/SV_DBs
+
+FASTA_DIR_FOR_PRT_SEQLOC	...MUSTOVERRIDE.../GRCh38_no_alt/SUPPORT/fasta_canon_prefixed
+
+# CONSERTING related	
+CONSERTING_GC_PREFIX	...MUSTOVERRIDE.../GRCh38_no_alt/CONSERTING/gc/GRCh38-
+#CONSERTING_MAPABILITY_PREFIX	$GENOME_ROOT/CONSERTING/mapability/
+#CLINCLS_CNV_CHECK_FILE	$GENOME_ROOT/CLINICAL/CONSERTING/CNVCheck.txt
+
+# Pulled directly from GRCh37-lite, not updated
+CLINCLS_GOLD_GENE_LIST_FILE	...MUSTOVERRIDE.../GRCh38_no_alt/CLINICAL/MEDAL_CONFIG/GoldGene.lst
+CLINCLS_SILVER_GENE_LIST_FILE	...MUSTOVERRIDE.../GRCh38_no_alt/CLINICAL/MEDAL_CONFIG/SilverGene.lst
+CLINCLS_GL_GOLD_NON_CANCER_GENE_FILE	...MUSTOVERRIDE.../GRCh38_no_alt/CLINICAL/MEDAL_CONFIG/gold_non_cancer.txt
+CLINCLS_GL_PCGP_GOLD_FILE	...MUSTOVERRIDE.../GRCh38_no_alt/CLINICAL/MEDAL_CONFIG/pcgp_gold_db.tab
+CLINCLS_CANCER_RELATED_GENES_FILE	...MUSTOVERRIDE.../GRCh38_no_alt/CLINICAL/cancer_related_genes.lst
+CLINCLS_CANCER_GENE_LIST_FILE	...MUSTOVERRIDE.../GRCh38_no_alt/CLINICAL/MEDAL_CONFIG/CancerGene_Good_Merged_mod.txt
+CLINCLS_NON_CANCER_GENE_LIST_HC_FILE	...MUSTOVERRIDE.../GRCh38_no_alt/CLINICAL/MEDAL_CONFIG/NonCancerGene_Good_Merged_mod_high_confidence.txt
+CLINCLS_NON_CANCER_GENE_LIST_LC_FILE	...MUSTOVERRIDE.../GRCh38_no_alt/CLINICAL/MEDAL_CONFIG/NonCancerGene_Good_Merged_mod_low_confidence.txt
+CLINCLS_GENES_MANUAL_FILE	...MUSTOVERRIDE.../GRCh38_no_alt/CLINICAL/MEDAL_CONFIG/genes_manual.tab
+CLINCLS_GEDI_TABIX_DIR	...MUSTOVERRIDE.../GRCh38_no_alt/CLINICAL/GEDI/tabix/
+CLINCLS_COSMIC_TABIX_DIR	...MUSTOVERRIDE.../GRCh38_no_alt/CLINICAL/COSMIC/COSMIC_tabix
+CLINCLS_COSMIC_PUBMED_SUMMARY	...MUSTOVERRIDE.../GRCh38_no_alt/CLINICAL/COSMIC/cosmic_pubmed_summary.tab.merged.tab
+# pubmed_summary: refactor, replaces various JZ files
+CLINCLS_COSMIC_HOTSPOTS_FILE	...MUSTOVERRIDE.../GRCh38_no_alt/CLINICAL/COSMIC/cosmic_hotspots_10_patients_sorted.tab
+CLINCLS_GEDI_MUTATION_FILE	...MUSTOVERRIDE.../GRCh38_no_alt/CLINICAL/GEDI/GeDI_mutation.txt
+# GEDI: recurrent variants
+CLINCLS_CANCER_GENE_SJ_MUTATION_FILE	...MUSTOVERRIDE.../GRCh38_no_alt/CLINICAL/PCGPRecurrentMutation/cancer_gene_SJ_mutation.txt
+CLINCLS_NON_CANCER_GENE_SJ_MUTATION_FILE	...MUSTOVERRIDE.../GRCh38_no_alt/CLINICAL/PCGPRecurrentMutation/non_cancer_gene_SJ_mutation_mod.txt
+DBSNP_TABIX_DIR	...MUSTOVERRIDE.../GRCh38_no_alt/dbSNP_tabix
+NHLBI_TABIX_DIR	...MUSTOVERRIDE.../GRCh38_no_alt/NHLBI_tabix
+DBNSFP_TABIX_DIR	...MUSTOVERRIDE.../GRCh38_no_alt/SUPPORT/dbNSFP_tabix
+# tabix-converted version, 3.0a+ required for hg38
+DBNSFP_TABIX_POS_FIELD	pos(1-based)
+# column name for variant position
+# (3.0a has different columns for hg19 and hg38)
+THOUSAND_GENOMES_AF_DIR	...MUSTOVERRIDE.../GRCh38_no_alt/thousand_genomes_AF
+CLINCLS_UNIPROT_ID_MAPPING_GZIP_FILE	...MUSTOVERRIDE.../GRCh38_no_alt/CLINICAL/MEDAL_CONFIG/HUMAN_9606_idmapping.dat.gz
+CLINCLS_GL_PCGP_POPULATION_FILE	...MUSTOVERRIDE.../GRCh38_no_alt/CLINICAL/PCGP_merged_germlineSNVs_in_selected_genes.txt.samples_kept_v2
+GL_APC_FLAT_FILE	...MUSTOVERRIDE.../GRCh38_no_alt/CLINICAL/LOVD_APC/export_APC_chromium.liacs.nl_APC131203.tab
+GL_MSH2_FLAT_FILE	...MUSTOVERRIDE.../GRCh38_no_alt/CLINICAL/LOVD_MSH2/export_MSH2_chromium.liacs.nl_MSH2_131203.tab
+
+# germline-reportable and -reviewable genes, mapped to refFlat
+# - SNV/indel/CNV now use refFlat, there is no GENE_EXON_REGION for 38.
+# - SV continues to use refFlat.
+CLINCLS_GERMLINE_REPORTABLE_GENES_REFFLAT	...MUSTOVERRIDE.../GRCh38_no_alt/CLINICAL/MEDAL_CONFIG/germline_reportable_to_refflat.txt
+CLINCLS_GERMLINE_REVIEWABLE_GENES_REFFLAT	...MUSTOVERRIDE.../GRCh38_no_alt/CLINICAL/MEDAL_CONFIG/germline_reviewable_to_refflat.txt
+CLINCLS_GERMLINE_REPORTABLE_GENES_GER	...MUSTOVERRIDE.../GRCh38_no_alt/CLINICAL/MEDAL_CONFIG/germline_reportable_to_refflat.txt
+CLINCLS_GERMLINE_REVIEWABLE_GENES_GER	...MUSTOVERRIDE.../GRCh38_no_alt/CLINICAL/MEDAL_CONFIG/germline_reviewable_to_refflat.txt
+CLINCLS_GL_REPORTABLE_GENE_ANNOTATION_FILE	...MUSTOVERRIDE.../GRCh38_no_alt/CLINICAL/MISC/GermlineReportableGeneAnnotation.txt
+CLINCLS_PRIVATE_VARIANTS_FILE	...MUSTOVERRIDE.../GRCh38_no_alt/CLINICAL/MEDAL_CONFIG/private_variants.txt
+EXAC_COOKED_DIR	...MUSTOVERRIDE.../GRCh38_no_alt/SUPPORT/ExAC_vcf2tab/
+# ...this cooked/tabix'd version used instead
+EXAC_COVERAGE_DIR	...MUSTOVERRIDE.../GRCh38_no_alt/SUPPORT/ExAC_coverage/
+CLINVAR_TABIX_DIR	...MUSTOVERRIDE.../GRCh38_no_alt/SUPPORT/ClinVar_tabix/
+CLINCLS_GOLD_CANCER_RANGES_GER	...MUSTOVERRIDE.../GRCh38_no_alt/CLINICAL/MEDAL_CONFIG/cancer_related_genes_dec19.2013.lst.mapped_to_GER
+CLINCLS_RB1_FLAT_FILE	...MUSTOVERRIDE.../GRCh38_no_alt/CLINICAL/MISC/export_RB1_all.tab.map.tab
+CLINCLS_GL_BAD_SNV_LIST_FILE	...MUSTOVERRIDE.../GRCh38_no_alt/CLINICAL/SNV/bad_SNV_list.tab
+
+# NHGRI	BIC:
+CLINCLS_NHGRI_BRCA1_FILE	...MUSTOVERRIDE.../GRCh38_no_alt/CLINICAL/NHGRI/brca1_data.txt
+CLINCLS_NHGRI_BRCA2_FILE	...MUSTOVERRIDE.../GRCh38_no_alt/CLINICAL/NHGRI/brca2_data.txt
+
+CLINCLS_HGMD_CLASSIFICATION_EVERYTHING_FILE	...MUSTOVERRIDE.../GRCh38_no_alt/CLINICAL/export_hgmd_classification_dm_mp_everything.tab
+# HGMD
+
+# historical committee decisions:
+CLINCLS_COMMITTEE_MEDALS_FILE_CSITH	...MUSTOVERRIDE.../GRCh38_no_alt/CLINICAL/MEDAL_CONFIG/panel_decisions_csith.txt
+CLINCLS_COMMITTEE_MEDALS_FILE	...MUSTOVERRIDE.../GRCh38_no_alt/CLINICAL/MEDAL_CONFIG/PCGP_germline_variants31genes_final.txt
+CLINCLS_COMMITTEE_MEDALS_FILE_SET2	...MUSTOVERRIDE.../GRCh38_no_alt/CLINICAL/MEDAL_CONFIG/panel_decisions_set2.txt
+
+# ARUP	
+CLINCLS_GL_ARUP_FILE	...MUSTOVERRIDE.../GRCh38_no_alt/CLINICAL/ARUP/MEN2_display.html
+
+# ASU TERT	
+CLINCLS_ASU_TERT_FILE	...MUSTOVERRIDE.../GRCh38_no_alt/CLINICAL/ASU_TERT/diseases_excerpt_TERT.html
+
+CLINCLS_GL_UMD_FLAT_FILE	...MUSTOVERRIDE.../GRCh38_no_alt/CLINICAL/MISC/umd_combined.tab
+
+# IARC_TP53
+CLINCLS_IARC_TP53_GERMLINE_FILE	...MUSTOVERRIDE.../GRCh38_no_alt/CLINICAL/IARC_TP53/germlineMutationDataIARC_TP53_Database.txt
+CLINCLS_IARC_TP53_SOMATIC_FILE	...MUSTOVERRIDE.../GRCh38_no_alt/CLINICAL/IARC_TP53/somaticMutationDataIARC_TP53_Database.txt
+
+
+# For SNV post-process	
+GENE_EXON_REGION_DIR	...MUSTOVERRIDE.../GRCh38_no_alt/REGIONS/GENE_EXON_REGION
+
+# Quality check
+REFFLAT_NO_JUNK_GTF	...MUSTOVERRIDE.../GRCh38_no_alt/STAR/refFlat_no_junk.gtf
+FASTQ_SCREEN_CONFIG	...MUSTOVERRIDE.../GRCh38_no_alt/QUALITY/fastq_screen.conf

@@ -1,0 +1,9 @@
+# Configuration file for Homo sapiens
+# Note that anything with genomic coordinates needs to go in the genome-specific
+# config files, not in the species specific config, because it will differ
+# among genome versions (e.g. hg18 vs. hg19)
+GENOME_ROOT	...MUSTOVERRIDE.../
+HGNC	...MUSTOVERRIDE...//general/HGNC/hgnc_complete_set.txt
+ENTREZ_GENE_GENEINFO	...MUSTOVERRIDE...//general/entrez_gene/gi_human.tab
+# Entrez Gene gene info table, filtered to homo sapiens species ID (9606)
+

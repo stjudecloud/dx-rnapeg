@@ -1,0 +1,5 @@
+AFC_ARGS_01	-app crest-tumoronly-post-filter
+AFC_ARGS_02	-app crest-tumoronly-post-fb
+AFC_ARGS_03	-app crest-tumoronly-post-aac
+AFC_ARGS_04	-app crest-tumoronly-post-medals
+AFC_ARGS_05	-app crest-tumoronly-post-filter

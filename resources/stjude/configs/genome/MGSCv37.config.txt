@@ -1,0 +1,69 @@
+# MGSCv37 config	
+GENOME_ROOT	...MUST OVERRIDE.../MGSCv37
+FASTA	...MUST OVERRIDE.../MGSCv37/FASTA/MGSCv37.fa
+FASTA_CHR	...MUST OVERRIDE.../MGSCv37/FASTA/chromosomes
+NIB	...MUST OVERRIDE.../MGSCv37/NIB
+TWOBIT	...MUST OVERRIDE.../MGSCv37/2BIT/MGSCv37.2bit
+DBSNP	...MUST OVERRIDE.../MGSCv37/SUPPORT/mm9_dbsnp_binary.blob
+#(infer as $FASTA.dict) SAMHEADER	$GENOME_ROOT/SUPPORT/seqdict.sam
+CHR_LENGTHS	...MUST OVERRIDE.../MGSCv37/SUPPORT/chromosome_lengths.txt
+CHR_LENGTHS_DELIM	 
+CHR_SIZES	...MUST OVERRIDE.../MGSCv37/SUPPORT/mm9.sizes
+CHR2GENE	...MUST OVERRIDE.../MGSCv37/CHR2GENE
+BLAT_HOST	sjblat
+BLAT_PORT	50001
+	
+EU_USE_MD	
+	
+# This value is also used twice down below, but must be specified each time in	
+# case of selective loading	
+REFSEQ_REFFLAT	...MUST OVERRIDE.../MGSCv37/mRNA/RefSeq/refFlat-sharp.txt
+
+# Specify which DBs to use for this genome (required variable)
+DB_USED	AceView.nm RefSeq.nm RefSeq.alt_exon WG
+	
+ACEVIEW_NM_DB_FASTA	...MUST OVERRIDE.../MGSCv37/mRNA/AceView/refFlat.AceView-nm.fa
+ACEVIEW_NM_BWA_DB	...MUST OVERRIDE.../MGSCv37/mRNA/AceView/refFlat.AceView-nm.fa
+ACEVIEW_NM_REFFLAT	...MUST OVERRIDE.../MGSCv37/mRNA/AceView/refFlat.AceView.txt
+ACEVIEW_NM_NAME_FMT	acc
+	
+REFSEQ_NM_DB_FASTA	...MUST OVERRIDE.../MGSCv37/mRNA/RefSeq/refFlat-sharp-nm.fa
+REFSEQ_NM_BWA_DB	...MUST OVERRIDE.../MGSCv37/mRNA/RefSeq/refFlat-sharp-nm.fa
+REFSEQ_NM_REFFLAT	...MUST OVERRIDE.../MGSCv37/mRNA/RefSeq/refFlat-sharp.txt
+REFSEQ_NM_NAME_FMT	acc
+	
+REFSEQ_AE_DB_FASTA	...MUST OVERRIDE.../MGSCv37/mRNA/RefSeq/refFlat-sharp-alt_exon.fa
+REFSEQ_AE_BWA_DB	...MUST OVERRIDE.../MGSCv37/mRNA/RefSeq/refFlat-sharp-alt_exon.fa
+REFSEQ_AE_REFFLAT	...MUST OVERRIDE.../MGSCv37/mRNA/RefSeq/refFlat-sharp.txt
+REFSEQ_AE_NAME_FMT	cust
+	
+WG_BWA_DB	...MUST OVERRIDE.../MGSCv37/BWA/MGSCv37.fa
+	
+# Bowtie	
+WG_BOWTIE_DB	...MUST OVERRIDE.../MGSCv37/BOWTIE/MGSCv37
+	
+# RNA-Seq mapping	
+WINDOWS	...MUST OVERRIDE.../MGSCv37/SUPPORT/windows.txt
+MIN_EMPTY_SEU_FASTA	4
+MAX_EMPTY_SEU_FASTA	10
+
+# FusionBuilder
+# Empty value indicates enhancer functionality is disabled
+ENHANCERS_FOR_FUSION_BUILDER	
+ENHANCERS_UPSTREAM_MARGIN	1000000
+ENHANCERS_DOWNSTREAM_MARGIN	1000000
+
+COMBINED_REFFLAT	...MUST OVERRIDE.../MGSCv37/mRNA/Combined/all_refFlats.txt
+
+# Cicero-related
+BLACKLIST_GENES	...MUST OVERRIDE.../MGSCv37/CICERO/blacklist.genes.txt
+BLACKLIST_FUSIONS	...MUST OVERRIDE.../MGSCv37/CICERO/blacklist.fusions.txt
+### from human, no file for mouse ### KNOWN_FUSIONS	$GENOME_ROOT/CICERO/known_fusions.txt
+KNOWN_ITD_FILE	...MUST OVERRIDE.../MGSCv37/CICERO/known_ITDs.txt
+COMPLEX_REGIONS	...MUST OVERRIDE.../MGSCv37/CICERO/complex_regions.txt
+REFGENE2PROTEIN	...MUST OVERRIDE.../MGSCv37/CICERO/refgene2protein.tab
+EXCLD_CHR	M,NT,Y
+
+# Quality-check
+REFFLAT_NO_JUNK_GTF	...MUST OVERRIDE.../MGSCv37/STAR/refFlat_no_junk.gtf
+FASTQ_SCREEN_CONFIG	...MUST OVERRIDE.../MGSCv37/QUALITY/fastq_screen.conf

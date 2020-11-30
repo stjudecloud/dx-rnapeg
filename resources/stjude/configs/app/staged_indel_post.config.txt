@@ -1,0 +1,8 @@
+# staged indel post config
+
+# Extra submission arguments
+AFC_ARGS_01	-app indel-post-somatic
+AFC_ARGS_02	-app file-merge
+AFC_ARGS_03	-app indel-post-germline
+AFC_ARGS_04	-app file-merge
+AFC_ARGS_05	-app indel-post-filter

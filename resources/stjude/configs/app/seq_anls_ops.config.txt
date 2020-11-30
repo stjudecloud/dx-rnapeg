@@ -1,0 +1,25 @@
+# Main configuration for sequence analysis pipeline	
+	
+# WashU BAM transfer completion notification list	
+WASHU_BAM_XFER_NOTIFICATION_LIST	janis.hailey@stjude.org,erin.hedlund@stjude.org,michael.rusch@stjude.org,panduka.nagahawatte@stjude.org,pankaj.gupta@stjude.org,wilson.smith@stjude.org
+	
+# List of emails to be notified when mapping, coverage, SNP, Conserting, and CREST completes	
+MAPPING_NOTIFICATIONS_EMAIL_LIST	michael.rusch@stjude.org,pankaj.gupta@stjude.org,andrew.thrasher@stjude.org,wilson.smith@stjude.org
+COV_COMPLETION_NOTIFICATION_EMAIL_LIST	michael.rusch@stjude.org,pankaj.gupta@stjude.org,andrew.thrasher@stjude.org,wilson.smith@stjude.org
+SNV_COMPLETION_NOTIFICATION_EMAIL_LIST	michael.rusch@stjude.org,pankaj.gupta@stjude.org,andrew.thrasher@stjude.org,wilson.smith@stjude.org
+CONSERTING_COMPLETION_NOTIFICATION_EMAIL_LIST	michael.rusch@stjude.org,pankaj.gupta@stjude.org,andrew.thrasher@stjude.org,wilson.smith@stjude.org
+CREST_COMPLETION_NOTIFICATION_EMAIL_LIST	michael.rusch@stjude.org,pankaj.gupta@stjude.org,andrew.thrasher@stjude.org,wilson.smith@stjude.org
+	
+# Indicate whether or not the "swarmed" version of SNV-detect should be used. 	
+# A non-empty value indicates that the swarmed version should be used, and 	
+# an empty value indicates that the non-swarmed version should be used.	
+SNV_DETECT_SWARMED	swarmed
+
+RGID_prefix	
+
+# Cron automation related options
+AFC_QUEUE	
+LOG_FILE_DIR	
+CRON_EMAIL_LIST	
+ENV_SCRIPT	
+CRON_PROFILE	cron_profile.sh

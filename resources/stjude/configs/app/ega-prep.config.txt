@@ -1,0 +1,7 @@
+# EGA bam prep config
+
+
+# Extra submission arguments
+AFC_ARGS_02	-q pcgp_heavy_io -M 15000 -v 15000
+AFC_ARGS_03	-q pcgp_heavy_io 
+AFC_ARGS_04	-q pcgp_heavy_io -M 15000 -v 15000 -app ega_webin_data_uploader

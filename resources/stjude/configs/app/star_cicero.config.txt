@@ -1,0 +1,29 @@
+#AFC_ARGS_01	-app cicero-geneinfo
+#AFC_ARGS_02	-app cicero-cicero
+#AFC_ARGS_03	
+#AFC_ARGS_04	-app cicero-annotate
+#AFC_ARGS_05	-app cicero-filter
+
+AFC_ARGS_01	
+AFC_ARGS_02	-M 30000
+AFC_ARGS_03	-M 30000 
+AFC_ARGS_04	-app cicero-geneinfo -M 30000
+AFC_ARGS_05	-app cicero-cicero
+AFC_ARGS_06	
+AFC_ARGS_07	-app cicero-annotate
+AFC_ARGS_08	-app cicero-filter
+AFC_ARGS_09	-app coverage-analysis-bw
+AFC_ARGS_10     -app coverage-post-presum	
+AFC_ARGS_11     -app coverage-post-summary	
+AFC_ARGS_12	
+AFC_ARGS_13	-M 6000
+AFC_ARGS_14	-M 6000
+AFC_ARGS_15	
+AFC_ARGS_16	
+AFC_ARGS_17	
+
+MIN_SC_READS	2
+MIN_SC_LEN	20
+MIN_HIT_LEN	25
+MAX_NUM_HITS	3
+MIN_FUSION_DIST	100000

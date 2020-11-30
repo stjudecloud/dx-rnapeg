@@ -1,0 +1,2 @@
+AFC_ARGS_01	-app snv-control-chr
+AFC_ARGS_02	-app snv-merge

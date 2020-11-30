@@ -1,0 +1,19 @@
+# Sequence analysis pipeline configuration for RNASEQ type	
+	
+# Coverage cutoff values.	
+MIN_COVGT20X_CASE	30
+MIN_COVGT20X_CONTROL	30
+	
+# Segment types	
+SEGMENT_TYPES	CodingExon Exon Intron
+COVERAGE_QC_SEGMENT_TYPE	Exon
+
+# List of emails to be notified when mapping, coverage, SNP, and CREST completes	
+TYPE_MAPPING_NOTIFICATIONS_EMAIL_LIST	yongjin.li@stjude.org,gang.wu@stjude.org,chunxu.qu@stjude.org,yiping.fan@stjude.org
+TYPE_SNV_COMPLETION_NOTIFICATION_EMAIL_LIST	gang.wu@stjude.org,chunxu.qu@stjude.org
+TYPE_CONSERTING_COMPLETION_NOTIFICATION_EMAIL_LIST	
+TYPE_CREST_COMPLETION_NOTIFICATION_EMAIL_LIST	
+TYPE_COV_COMPLETION_NOTIFICATION_EMAIL_LIST	gang.wu@stjude.org,chunxu.qu@stjude.org,yiping.fan@stjude.org
+
+# For snv-post, hypermutator cutoff (temporary; for experimental purposes)
+SNV_HYPERMUTATOR_CUTOFF	1000000

@@ -1,0 +1,4 @@
+# Coverage config
+
+# Extra submission arguments
+AFC_ARGS_01	-M 6000

@@ -1,0 +1,8 @@
+MATLAB	/hpcf/apps/matlab/install/R2013a_bin
+MUTSIG_LIB	/nfs_exports/apps/internal/MutSigCV
+MUTSIG_RUN	/nfs_exports/apps/internal/MutSigCV/bin/run_MutSigCV.sh
+COVERAGE	/nfs_exports/apps/internal/MutSigCV/exome_full192.coverage.txt
+COVARIATES	/nfs_exports/apps/internal/MutSigCV/gene.covariates.txt
+TYPES	/nfs_exports/apps/internal/MutSigCV/mutation_type_dictionary_file.txt
+HG19	/nfs_exports/apps/internal/MutSigCV/chr_files_hg19
+

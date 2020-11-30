@@ -1,0 +1,1 @@
+AFC_SCRIPT	bsub_array_for_cmdfile.sh

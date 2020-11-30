@@ -1,0 +1,4 @@
+# snv/indel post staging config
+
+# Extra submission arguments
+AFC_ARGS_01	-app snv-indel-post-staging

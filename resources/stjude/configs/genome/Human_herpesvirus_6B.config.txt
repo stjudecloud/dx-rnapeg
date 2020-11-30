@@ -1,0 +1,28 @@
+# HerpesB6 config	
+FASTA	/nfs_exports/genomes/1/Human_herpesvirus_6B/NC_000898.1/FASTA/Human_herpesvirus_6B.fa
+FASTA_CHR	/nfs_exports/genomes/1/Human_herpesvirus_6B/NC_000898.1/FASTA/Human_herpesvirus_6B.fa
+NIB	/nfs_exports/genomes/1/Human_herpesvirus_6B/NC_000898.1/NIB
+#DBSNP	/nfs_exports/genomes/1/Homo_sapiens/GRCh37-lite/SUPPORT/dbsnp_binary_v2.blob
+WINDOWS	/nfs_exports/genomes/1/Human_herpesvirus_6B/NC_000898.1/SUPPORT/windows.txt
+CHR_LENGTHS	/nfs_exports/genomes/1/Human_herpesvirus_6B/NC_000898.1/SUPPORT/chromosome_lengths.txt
+CHR_LENGTHS_DELIM	 
+	
+EU_USE_MD	
+	
+# This value is also used twice down below, but must be specified each time in	
+# case of selective loading	
+#REFSEQ_REFFLAT	/nfs_exports/genomes/1/Homo_sapiens/GRCh37-lite/mRNA/RefSeq/RefSeq.ucsc.nopar.txt
+	
+ALT_DBS	
+	
+#ACEVIEW_NM_NAME	AceView.nm
+#ACEVIEW_NM_BWA_DB	/scratch_space/static/GRCh37-lite/AceView.nm/AceView.ucsc.lifted.nm.plus.txt
+#ACEVIEW_NM_REFFLAT	/nfs_exports/genomes/1/Homo_sapiens/GRCh37-lite/mRNA/AceView/AceView.ucsc.lifted.txt
+#REFSEQ_NM_NAME	RefSeq.nm
+#REFSEQ_NM_BWA_DB	/scratch_space/static/GRCh37-lite/RefSeq.nm/RefSeq.ucsc.nopar.nm.plus.txt
+#REFSEQ_NM_REFFLAT	/nfs_exports/genomes/1/Homo_sapiens/GRCh37-lite/mRNA/RefSeq/RefSeq.ucsc.nopar.txt
+#REFSEQ_AE_NAME	RefSeq.alt_exon
+#REFSEQ_AE_BWA_DB	/scratch_space/static/GRCh37-lite/RefSeq.alt_exon/RefSeq.ucsc.nopar.alt_exon.plus.txt
+#REFSEQ_AE_REFFLAT	/nfs_exports/genomes/1/Homo_sapiens/GRCh37-lite/mRNA/RefSeq/RefSeq.ucsc.nopar.txt
+WG_BWA_DB	/nfs_exports/genomes/1/Human_herpesvirus_6B/NC_000898.1/BWA/Human_herpesvirus_6B.fa
+	

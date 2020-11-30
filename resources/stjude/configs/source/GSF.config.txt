@@ -1,0 +1,4 @@
+# Sequence analysis pipeline configuration for sequences obtained from Genome Sequencing Facility in Hartwell Center
+
+# Directory of sequencing runs
+SEQ_RUN_DIR	/sonas/hartwell/gsf/runs

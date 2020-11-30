@@ -1,0 +1,1 @@
+DEFAULT_FB_ARGS	--recip 10000 --gup 10000 --gdown 0

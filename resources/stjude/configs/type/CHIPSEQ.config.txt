@@ -1,0 +1,19 @@
+# Sequence analysis pipeline configuration for CHIPSEQ type	
+	
+# Minimum number of non-duplicate mapped reads required for processing	
+MIN_NONDUPMAPPED	
+	
+# Coverage cutoff values.	
+MIN_COVGT20X_CASE	
+MIN_COVGT20X_CONTROL	
+	
+# Coverage options
+SEGMENT_TYPES	WG CodingExon Exon Intron
+COVERAGE_QC_SEGMENT_TYPE	Exon
+
+# List of emails to be notified when mapping, coverage, SNP, and CREST completes	
+TYPE_MAPPING_NOTIFICATIONS_EMAIL_LIST	
+TYPE_COV_COMPLETION_NOTIFICATION_EMAIL_LIST	
+TYPE_SNV_COMPLETION_NOTIFICATION_EMAIL_LIST	xiang.chen@stjude.org
+TYPE_CONSERTING_COMPLETION_NOTIFICATION_EMAIL_LIST	
+TYPE_CREST_COMPLETION_NOTIFICATION_EMAIL_LIST	

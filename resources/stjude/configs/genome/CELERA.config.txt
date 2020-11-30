@@ -1,0 +1,11 @@
+# CELERA config (not much here)	
+GENOME_ROOT	...MUSTOVERRIDE.../CELERA
+FASTA	...MUSTOVERRIDE.../CELERA/FASTA/mm_alt_Celera.fa
+FASTA_CHR	...MUSTOVERRIDE.../CELERA/FASTA/chromosomes
+	
+EU_USE_MD	
+	
+ALT_DBS	
+	
+WG_BWA_DB	...MUSTOVERRIDE.../CELERA/BWA/mm_alt_Celera.fa
+	

@@ -1,0 +1,22 @@
+# Sequence analysis pipeline configuration for EXCAP type	
+	
+# Minimum number of non-duplicate mapped reads required for processing	
+MIN_NONDUPMAPPED	40000000
+	
+# Coverage cutoff values.	
+MIN_COVGT20X_CASE	80
+MIN_COVGT20X_CONTROL	70
+	
+# For snv-post, hypermutator cutoff
+SNV_HYPERMUTATOR_CUTOFF	1000
+
+# Coverage options
+SEGMENT_TYPES	CodingExon Exon
+COVERAGE_QC_SEGMENT_TYPE	CodingExon
+
+# List of emails to be notified when mapping, coverage, SNP, and CREST completes	
+TYPE_MAPPING_NOTIFICATIONS_EMAIL_LIST	yongjin.li@stjude.org,gang.wu@stjude.org
+TYPE_COV_COMPLETION_NOTIFICATION_EMAIL_LIST	gang.wu@stjude.org
+TYPE_SNV_COMPLETION_NOTIFICATION_EMAIL_LIST	xiang.chen@stjude.org,gang.wu@stjude.org
+TYPE_CONSERTING_COMPLETION_NOTIFICATION_EMAIL_LIST	
+TYPE_CREST_COMPLETION_NOTIFICATION_EMAIL_LIST	gang.wu@stjude.org

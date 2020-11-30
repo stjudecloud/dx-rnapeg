@@ -1,0 +1,9 @@
+AFC_ARGS_01	-app cicero-itd-extractsc
+AFC_ARGS_02	-app cicero-itd-cicero
+AFC_ARGS_03	-app cicero-itd-annotate
+
+MIN_SC_READS	2
+MIN_SC_LEN	20
+MIN_HIT_LEN	20
+MAX_NUM_HITS	3
+MIN_FUSION_DIST	100000

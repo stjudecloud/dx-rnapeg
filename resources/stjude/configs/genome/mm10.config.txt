@@ -1,0 +1,13 @@
+# mm10 config	
+GENOME_ROOT	...MUSTOVERRIDE.../mm10
+FASTA	...MUSTOVERRIDE.../mm10/FASTA/mm10.fa
+
+REFSEQ_REFFLAT	...MUSTOVERRIDE.../mm10/mRNA/RefSeq/refFlat.txt
+# currently plain UCSC download, may need to be sharp-ified? (MNE)
+
+# Cicero-related:
+REFGENE2PROTEIN	...MUSTOVERRIDE.../mm10/CICERO/refgene2protein.tab
+
+# Quality-check
+REFFLAT_NO_JUNK_GTF	...MUSTOVERRIDE.../mm10/STAR/refFlat_no_junk.gtf
+FASTQ_SCREEN_CONFIG	...MUSTOVERRIDE.../mm10/QUALITY/fastq_screen.conf

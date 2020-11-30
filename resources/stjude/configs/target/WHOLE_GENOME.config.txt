@@ -1,0 +1,20 @@
+# Configuration for WHOLE_GENOME sequencing target
+
+# Analyte type
+ANALYTE	DNA
+	
+# Coverage QC cutoff values.	
+MIN_COVGT20X_CASE	80
+MIN_COVGT20X_CONTROL	70
+COV_THRESHOLD	20
+MIN_COVGT45X_CASE	65
+MIN_COVGT45X_CONTROL	65
+
+# Segment types	
+SEGMENT_TYPES	WG CodingExon Exon
+
+# This type's results will be used for coverage QC 
+PRIMARY_SEGMENT_TYPE	Exon
+
+# Values for snv
+SNV_MEM	6000

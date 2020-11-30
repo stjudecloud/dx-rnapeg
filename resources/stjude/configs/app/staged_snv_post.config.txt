@@ -1,0 +1,5 @@
+# staged snv post config
+
+# Extra submission arguments
+AFC_ARGS_01	-app snv-post-staged 
+AFC_ARGS_02	-app file-merge

@@ -1,0 +1,4 @@
+AFC_ARGS_01	-app crest-filter
+AFC_ARGS_02	-app crest-post-fb
+AFC_ARGS_03	-app crest-post-aac
+AFC_ARGS_04	-app crest-post-medals

@@ -1,0 +1,4 @@
+# VIS grouping config
+
+# Extra submission arguments
+#AFC_ARGS_01	-app picard-lsf

@@ -1,0 +1,4 @@
+AFC_ARGS_03	-app sv-somatic-classifier-crest-remove_dups
+AFC_ARGS_04	-app sv-somatic-classifier-cicero-remove_dups
+AFC_ARGS_07	-app sv-somatic-classifier-associate_sv
+SNPSHOT_DIR	MUSTOVERRIDE

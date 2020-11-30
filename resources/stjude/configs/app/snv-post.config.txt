@@ -1,0 +1,26 @@
+# snv-post config	
+	
+# p-value cutoff for find_single_strand_coverage.sh	
+SINGLE_STRAND_P_VALUE_CUTOFF	0.1
+	
+# Threshold for RS filtering to be passed to collect_sub_somatic_snp.sh	
+# It is a percentage expressed as an integer (i.e. "90" 	 90%)
+FILTER_RS_THRESHOLD	90
+	
+# Names of the somatic thresholds to process in collect_sub_somatic_snp.sh	
+# Options are HIGH MED LOW	
+SOMATIC_THRESHOLDS	HIGH MED LOW
+	
+# Array-for-commandfile script	
+AFC_SCRIPT	bsub_array_for_cmdfile.sh
+
+# Steps in this pipeline
+AFC_STEPS	01 02
+
+# Extra submission arguments
+AFC_ARGS_01	
+AFC_ARGS_02	
+AFC_ARGS_03	
+
+# List of emails to be notified when pipeline completes
+SNV_COMPLETION_NOTIFICATION_EMAIL_LIST	michael.rusch@stjude.org,pankaj.gupta@stjude.org,andrew.thrasher@stjude.org

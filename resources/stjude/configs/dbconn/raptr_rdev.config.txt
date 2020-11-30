@@ -1,0 +1,5 @@
+DSN	dbi:Pg:dbname=gedi;host=gedi-rdev;port=5437
+PASSFILE	~/.db_pwd/raptr_dev.txt
+USER	SELF
+PASS	PROMPT
+INIT_COMMAND	SET SCHEMA 'raptr'

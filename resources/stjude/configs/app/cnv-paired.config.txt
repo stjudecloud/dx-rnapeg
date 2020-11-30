@@ -1,0 +1,2 @@
+# Extra submission arguments
+AFC_ARGS_01	-app cnv-paired-cnv

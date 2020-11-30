@@ -1,0 +1,79 @@
+# WashU's HG18 (NCBI36_WUGSC_variant) in the same seequence order as WashU uses (1-9,X,Y,10-22,etc) 	
+FASTA	/nfs_exports/genomes/1/Homo_sapiens/NCBI36_WUGSC_variant/FASTA/NCBI36_WUGSC_variant.fa
+FASTA_CHR	/nfs_exports/genomes/1/Homo_sapiens/NCBI36_WUGSC_variant/FASTA/chromosomes
+NIB	/nfs_exports/genomes/1/Homo_sapiens/NCBI36_WUGSC_variant/NIB
+TWOBIT	/nfs_exports/genomes/1/Homo_sapiens/NCBI36_WUGSC_variant/2BIT/NCBI36_WUGSC_variant.2bit
+DBSNP	/nfs_exports/genomes/1/Homo_sapiens/NCBI36_WUGSC_variant/dbSNP/dbSNP132_snv_hg18.lst
+#(infer as $FASTA.dict) SAMHEADER	/nfs_exports/genomes/1/Homo_sapiens/NCBI36_WUGSC_variant/FASTA/NCBI36_WUGSC_variant.fa.dict
+CHR_LENGTHS	/nfs_exports/apps/gnu-apps/NextGen/nextgensupport/chromosome_length_mod.txt
+CHR_LENGTHS_DELIM	|
+CHR_SIZES	/nfs_exports/genomes/1/Homo_sapiens/NCBI36_WUGSC_variant/SUPPORT/canonical_chr_sizes.txt
+CHR2GENE	/nfs_exports/apps/gnu-apps/NextGen/nextgensupport/hg18
+BLAT_HOST	sjblat
+BLAT_PORT	50000
+	
+# This value is also used twice down below, but must be specified each time in	
+# case of selective loading	
+REFSEQ_REFFLAT	/nfs_exports/genomes/1/Homo_sapiens/NCBI36_WUGSC_variant/mRNA/RefSeq/RefSeq.ucsc.sharp.txt
+	
+ACEVIEW_NM_DB_FASTA	/nfs_exports/genomes/1/Homo_sapiens/NCBI36_WUGSC_variant/mRNA/AceView/refFlat.AceView-validonly.nm.plus.txt
+ACEVIEW_NM_BWA_DB	/nfs_exports/genomes/1/Homo_sapiens/NCBI36_WUGSC_variant/mRNA/AceView/refFlat.AceView-validonly.nm.plus.txt
+ACEVIEW_NM_REFFLAT	/nfs_exports/genomes/1/Homo_sapiens/NCBI36_WUGSC_variant/mRNA/AceView/refFlat.AceView-validonly.txt
+ACEVIEW_NM_NAME_FMT	acc
+	
+REFSEQ_NM_DB_FASTA	/nfs_exports/genomes/1/Homo_sapiens/NCBI36_WUGSC_variant/mRNA/RefSeq/refFlat-sharp-nm.fa
+REFSEQ_NM_BWA_DB	/nfs_exports/genomes/1/Homo_sapiens/NCBI36_WUGSC_variant/mRNA/RefSeq/refFlat-sharp-nm.fa
+REFSEQ_NM_REFFLAT	/nfs_exports/genomes/1/Homo_sapiens/NCBI36_WUGSC_variant/mRNA/RefSeq/refFlat-sharp.txt
+REFSEQ_NM_NAME_FMT	acc
+	
+REFSEQ_AE_DB_FASTA	/nfs_exports/genomes/1/Homo_sapiens/NCBI36_WUGSC_variant/mRNA/RefSeq/refFlat-sharp-alt_exon.fa
+REFSEQ_AE_BWA_DB	/nfs_exports/genomes/1/Homo_sapiens/NCBI36_WUGSC_variant/mRNA/RefSeq/refFlat-sharp-alt_exon.fa
+REFSEQ_AE_REFFLAT	/nfs_exports/genomes/1/Homo_sapiens/NCBI36_WUGSC_variant/mRNA/RefSeq/refFlat-sharp.txt
+REFSEQ_AE_NAME_FMT	cust
+	
+WG_BWA_DB	/nfs_exports/genomes/1/Homo_sapiens/NCBI36_WUGSC_variant/BWA/NCBI36_WUGSC_variant.fa
+	
+# Bowtie	
+WG_BOWTIE_DB	/nfs_exports/genomes/1/Homo_sapiens/NCBI36_WUGSC_variant/BOWTIE/NCBI36_WUGSC_variant
+	
+# RNA-Seq mapping	
+WINDOWS	/nfs_exports/genomes/1/Homo_sapiens/NCBI36_WUGSC_variant/SUPPORT/windows.txt
+MIN_EMPTY_SEU_FASTA	20
+MAX_EMPTY_SEU_FASTA	28
+	
+# For SNV post-process	
+PALLAS_GENOME_NAME	hg18
+OMIM_VALID_SNP_LIST	/nfs_exports/apps/gnu-apps/NextGen/nextgensupport/valid_snp_markers/OMIM_valid_snp_loc.lst
+#GENE_EXON_REGION_DIR	/nfs_exports/genomes/1/Homo_sapiens/GRCh37-lite/REGIONS/GENE_EXON_REGION
+#GENE_EXON_GI_REGION_DIR	/nfs_exports/genomes/1/Homo_sapiens/GRCh37-lite/REGIONS/GENE_EXON_GI_REGION
+#TFBS_REGION_DIR	/nfs_exports/genomes/1/Homo_sapiens/GRCh37-lite/REGIONS/TFBS_ConsSites
+#CPG_REGION_DIR	/nfs_exports/genomes/1/Homo_sapiens/GRCh37-lite/REGIONS/CpG_REGION
+#CONSERVED_REGION_DIR	/nfs_exports/genomes/1/Homo_sapiens/GRCh37-lite/REGIONS/HUMAN_MOUSE_CONSERVATION
+#REPEAT_REGION_DIR	/nfs_exports/genomes/1/Homo_sapiens/GRCh37-lite/REGIONS/REPEATMASKER
+#ANNOTATION_CONFIG_DIR	/nfs_exports/apps/gnu-apps/NextGen/nextgensupport2
+#GENE_INFO_FILE	/nfs_exports/apps/gnu-apps/NextGen/nextgensupport2/NCBI/gene_info_human
+#REFSEQ_DIR	/nfs_exports/apps/gnu-apps/NextGen/nextgensupport2/NCBI/RefSeq
+#RESCUE_GENEMAP_FILE	/nfs_exports/apps/gnu-apps/NextGen/nextgensupport2/NCBI/all_manual_geneName2geneID.map  ## this is a list of manually curated geneName2geneID.map to avoid manually look up the records that is not in the current gene_info_human
+#FASTA_DIR_FOR_PRT_SEQLOC	/nfs_exports/apps/gnu-apps/NextGen/nextgensupport/hg19/fasta
+#GENE_TRANSCRIPT_MATRIX	/nfs_exports/apps/gnu-apps/NextGen/nextgensupport2/NCBI/RefSeq/gene_transcript_matrix.withNM.mod
+DB_SNP_POS_DOT_LIST_FILE	/nfs_exports/genomes/1/Homo_sapiens/NCBI36_WUGSC_variant/dbSNP/dbSNP132_hg18_chr_pos-dot.lst
+DB_SNP_POS_LIST_FILE	/nfs_exports/apps/gnu-apps/NextGen/nextgensupport/dbSNP130_chr_pos.lst
+#DB_SNP_EXEMPT_1_POS_LIST_FILE	/nfs_exports/genomes/1/Homo_sapiens/GRCh37-lite/dbSNP/dbSNP132_hg19_exempt_1.lst
+#DB_SNP_EXEMPT_2_POS_LIST_FILE	/nfs_exports/genomes/1/Homo_sapiens/GRCh37-lite/dbSNP/dbSNP132_hg19_exempt_2.lst
+	
+# For NHLBI check (no NHLBI in this version)	
+NHLBI_DB_PREFIX	
+NHLBI_COV_PREFIX	
+	
+# For Cosmic check (note: COSMIC_AA_FILE is not version-specific)	
+PCGP_GERM_DB_DIR	/nfs_exports/apps/gnu-apps/NextGen/lwbin/database/hg18/SNP_PCGP_Germ_High20_check_v2/2011_08_31_update/updated_hg18_db
+COSMIC_DB_FILE	/nfs_exports/apps/gnu-apps/NextGen/lwbin/database/hg19/COSMIC_SNPs/v61/CosmicMutantExport_v61_260912.tsv_SNV_hg18site
+COSMIC_AA_FILE	/nfs_exports/apps/gnu-apps/NextGen/lwbin/database/hg19/COSMIC_SNPs/v61/CosmicMutantExport_v61_260912.tsv_SNV_protein
+OMIM_VALID_DB_DIR	/nfs_exports/genomes/1/Homo_sapiens/NCBI_SNP_Gene_Report/OMIM_valid_snp_and_NCBI_clinical_variants_hg18.txt
+	
+# Crest-related	
+MERGED_SV_DB_DNA	/nfs_exports/genomes/1/Homo_sapiens/NCBI36_WUGSC_variant/GERM_SV/merged_SV_db_dna.txt
+
+# CONSERTING related
+CONSERTING_GC_PREFIX	/nfs_exports/genomes/1/Homo_sapiens/GRCh37-lite/CONSERTING/gc/
+CONSERTING_MAPABILITY_PREFIX	/nfs_exports/genomes/1/Homo_sapiens/GRCh37-lite/CONSERTING/mapability/hg18/

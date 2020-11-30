@@ -1,0 +1,6 @@
+# Crest config
+
+# Extra submission arguments
+AFC_ARGS_01	-app crest-analysis-countdiff 
+AFC_ARGS_02	-app crest-analysis-crest
+AFC_ARGS_03	-app crest-analysis-rmdup

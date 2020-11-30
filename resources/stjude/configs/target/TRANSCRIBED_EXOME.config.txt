@@ -1,0 +1,17 @@
+# Configuration for TRANSCRIBED_EXOME sequencing target
+
+# Analyte type
+ANALYTE	RNA
+
+# Coverage QC cutoff values
+MIN_COVGT20X_CASE	30
+MIN_COVGT20X_CONTROL	30
+
+# Segment types
+SEGMENT_TYPES	CodingExon Exon Intron
+
+# This type's results will be used for coverage QC 
+PRIMARY_SEGMENT_TYPE	Exon
+
+# Values for snv
+SNV_MEM	2400

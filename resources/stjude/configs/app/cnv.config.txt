@@ -1,0 +1,4 @@
+# CNV config
+
+# Extra submission arguments
+AFC_ARGS_01	-M 26000

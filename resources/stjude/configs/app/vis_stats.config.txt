@@ -1,0 +1,4 @@
+# VIS stats config
+IDSEQS	/nfs_exports/genomes/1/projects/LAMPCRSEQ/Greene/BucketPreRaw/lib_idseqs.txt
+
+# Extra submission arguments

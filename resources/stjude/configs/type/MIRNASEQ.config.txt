@@ -1,0 +1,15 @@
+# Sequence analysis pipeline configuration for MIRNASEQ type	
+	
+# Coverage cutoff values.	
+MIN_COVGT20X_CASE	
+MIN_COVGT20X_CONTROL	
+	
+# Segment types	
+SEGMENT_TYPES	CodingExon Exon Intron
+	
+# List of emails to be notified when mapping, coverage, SNP, and CREST complete	
+TYPE_MAPPING_NOTIFICATIONS_EMAIL_LIST	yongjin.li@stjude.org,yiping.fan@stjude.org
+TYPE_SNV_COMPLETION_NOTIFICATION_EMAIL_LIST	yongjin.li@stjude.org
+TYPE_CONSERTING_COMPLETION_NOTIFICATION_EMAIL_LIST	
+TYPE_CREST_COMPLETION_NOTIFICATION_EMAIL_LIST	
+TYPE_COV_COMPLETION_NOTIFICATION_EMAIL_LIST	yiping.fan@stjude.org

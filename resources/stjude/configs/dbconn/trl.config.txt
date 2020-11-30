@@ -1,0 +1,9 @@
+# TRL db connection information
+DSN	dbi:ODBC:sjmemdwp_dsn
+#USER	pcgp_tbchecker
+#PASSFILE	~/.db_pwd/trl.txt
+#USER	SELF
+PASSFILE	~/.db_pwd/trl.txt
+#USER	stjude\mrusch
+USER	stjude\SELF
+PASS	PROMPT

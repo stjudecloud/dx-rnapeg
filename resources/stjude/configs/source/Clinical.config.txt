@@ -1,0 +1,11 @@
+# Sequence analysis pipeline configuration for sequences obtained from Clinical Genomics lab	
+	
+# List of emails to be notified when mapping, coverage, SNP, and CREST completes	
+SOURCE_MAPPING_NOTIFICATIONS_EMAIL_LIST	jinghui.zhang@stjude.org,michael.rusch@stjude.org,michael.edmonson@stjude.org
+SOURCE_COV_COMPLETION_NOTIFICATION_EMAIL_LIST	
+SOURCE_SNV_COMPLETION_NOTIFICATION_EMAIL_LIST	
+SOURCE_CONSERTING_COMPLETION_NOTIFICATION_EMAIL_LIST	
+SOURCE_CREST_COMPLETION_NOTIFICATION_EMAIL_LIST	
+
+# Directory of clinical sequencing runs
+SEQ_RUN_DIR	/cgs01/clingen/raw_data/illumina_runs/CG

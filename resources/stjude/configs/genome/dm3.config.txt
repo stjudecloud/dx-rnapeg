@@ -1,0 +1,6 @@
+# dm3 (Drosophila) config	
+FASTA	/nfs_exports/genomes/1/Drosophila_melanogaster/dm3/FASTA/dm3_20140106.fa
+FASTA_CHR	/nfs_exports/genomes/1/Drosophila_melanogaster/dm3/FASTA/chromosomes
+COMBINED_REFFLAT	/nfs_exports/genomes/1/Drosophila_melanogaster/dm3/mRNA/Combined/all_refFlats.txt
+REFSEQ_REFFLAT	/nfs_exports/genomes/1/Drosophila_melanogaster/dm3/mRNA/UCSC/refFlat.txt
+TWOBIT	/nfs_exports/genomes/1/Drosophila_melanogaster/dm3/2BIT/dm3.2bit

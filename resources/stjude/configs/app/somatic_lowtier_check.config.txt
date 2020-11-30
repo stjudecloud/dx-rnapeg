@@ -1,0 +1,8 @@
+# somatic snv low-tier check config
+
+# Extra submission arguments
+AFC_ARGS_01	-app snv-lowtier-checklist
+AFC_ARGS_02	-app file-merge
+AFC_ARGS_03	-app snv-lowtier-checks
+AFC_ARGS_04	-app file-merge
+AFC_ARGS_05	-app snv-lowtier-autoreview

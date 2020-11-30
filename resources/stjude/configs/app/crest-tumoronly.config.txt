@@ -1,0 +1,3 @@
+AFC_ARGS_01	-app crest-tumoronly-countdiff
+AFC_ARGS_02	-app crest-tumoronly-crest
+AFC_ARGS_03	-app crest-tumoronly-removedup

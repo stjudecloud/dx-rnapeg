@@ -1,0 +1,10 @@
+# CNV (research) config
+
+# Array-for-commandfile script	
+AFC_SCRIPT	bsub_array_for_cmdfile.sh
+
+# Steps in this pipeline
+AFC_STEPS	41 42
+
+# List of emails to be notified when pipeline completes
+CONSERTING_COMPLETION_NOTIFICATION_EMAIL_LIST	michael.rusch@stjude.org,pankaj.gupta@stjude.org,andrew.thrasher@stjude.org,wilson.smith@stjude.org

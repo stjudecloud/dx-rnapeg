@@ -1,0 +1,26 @@
+# mapping-rnaseq config
+
+# Soft-clip snapping to intron/exon boundaries.
+# This is used in the mapping using the custom databases.  After the
+# coordinates
+# are translated to genomic, and introns introduced, the code looks for cases
+# where there is only a short alignment after an intron, followed by soft-
+# clipping.  In these cases, it moves the soft-clip position to the end of
+# the previous exon.  This is to reduce false mapping across exon junctions
+# due
+# to microhomology.  The number indicates how many aligned bases there may be
+# for the short aligned region to be considered short.
+SC_SNAP_RANGE	3
+
+# Extra submission arguments
+AFC_ARGS_00	-app mapping-rna-fasta
+AFC_ARGS_02	-app mapping-rna-resmrg
+AFC_ARGS_03	-app mapping-rna-finish1
+AFC_ARGS_04	-app mapping-rna-seu
+AFC_ARGS_05	-app mapping-rna-fasta
+AFC_ARGS_06	-app mapping-rna-splitfasta
+AFC_ARGS_07	-app mapping-rna-sim4
+AFC_ARGS_08	-app mapping-rna-refmrg
+AFC_ARGS_09	-app mapping-rna-names
+AFC_ARGS_10	-app mapping-rna-extrref
+AFC_ARGS_11	-app mapping-rna-finish2

@@ -1,0 +1,7 @@
+# Paired-coverage config
+
+# Extra submission arguments
+AFC_ARGS_01	
+AFC_ARGS_02	
+AFC_ARGS_03	
+AFC_ARGS_04	-M 6000 

@@ -1,0 +1,6 @@
+#DSN	dbi:Pg:dbname=new_vis_bwa;host=d100882.stjude.sjcrh.local;port=5432
+DSN	dbi:Pg:dbname=vis;host=raptr-cdev;port=5504
+USER	mruschlocal
+PASSFILE	~/.db_pwd/raptr.txt
+PASS	PROMPT
+INIT_COMMAND	SET SCHEMA 'new_vis_bwa'

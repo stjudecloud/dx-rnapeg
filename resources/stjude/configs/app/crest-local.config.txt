@@ -1,0 +1,2 @@
+AFC_ARGS_01	-app crest-localized
+AFC_ARGS_02	-app crest-localized-merge-gene

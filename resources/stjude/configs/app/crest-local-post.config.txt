@@ -1,0 +1,5 @@
+AFC_ARGS_01	-app crest-localized-post-filter
+AFC_ARGS_02	-app crest-localized-post-fb
+AFC_ARGS_03	-app crest-localized-post-aac
+AFC_ARGS_04	-app crest-localized-medals
+AFC_ARGS_05	-app crest-localized-filter -app python-3.4.2

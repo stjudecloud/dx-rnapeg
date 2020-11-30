@@ -1,0 +1,25 @@
+NEXTGEN	/nfs_exports/apps/gnu-apps/NextGen
+
+PERLSRC	/nfs_exports/apps/gnu-apps/NextGen/perlsrc
+FINDSUB	/nfs_exports/apps/gnu-apps/NextGen/perlsrc/FindSub.pl
+
+SCRIPTS4ALL	/nfs_exports/apps/gnu-apps/NextGen/scripts4all
+MAKE_GENE_FASTA	/nfs_exports/apps/gnu-apps/NextGen/scripts4all/make_gene_fasta
+CREATE_ALL_TEMPLATE_LIB	/nfs_exports/apps/gnu-apps/NextGen/scripts4all/create_all_template_lib
+EDMONSON_BLAST2ACE_BIN	/nfs_exports/apps/gnu-apps/NextGen/scripts4all/BLAST2ACE/edmonsom/bin
+RERUN_TSP_GENE_LIST	/nfs_exports/apps/gnu-apps/NextGen/scripts4all/rerun_TSP_genelist
+GET_TSP_SUMMARY	/nfs_exports/apps/gnu-apps/NextGen/scripts4all/get_TSP_summary
+RUN_BATCH_COVERAGE	/nfs_exports/apps/gnu-apps/NextGen/scripts4all/run_batch_coverage
+
+DATA	/nfs_exports/apps/gnu-apps/NextGen/data
+FUNCTIONS	/nfs_exports/apps/gnu-apps/NextGen/data/function.lst
+GET_SAMPLE_COUNTS	/nfs_exports/apps/gnu-apps/NextGen/data/get_sample_counts.pl
+
+SUPPORTIVE	/nfs_exports/apps/gnu-apps/NextGen/lwbin/SNPPost/supportive
+SNV_BACKGROUND_CHECKING_V42	/nfs_exports/apps/gnu-apps/NextGen/lwbin/SNPPost/supportive/SNV_background_checking_6500_exome_v4.2.pl
+SNV_BACKGROUND_CHECKING_V4	/nfs_exports/apps/gnu-apps/NextGen/lwbin/SNPPost/supportive/SNV_background_checking_5400_exome_v4.pl
+
+LWBIN_SCRIPTS	/nfs_exports/apps/gnu-apps/NextGen/lwbin/scripts
+SNV_BACKGROUND_CHECKING_W_COSMIC_V42	/nfs_exports/apps/gnu-apps/NextGen/lwbin/scripts/SNP_PCGP_Germ_High20_check_v2/SNV_background_checking_anno_v4.2_with_COSMIC.pl
+SNV_BACKGROUND_CHECKING_W_COSMIC_V4	/nfs_exports/apps/gnu-apps/NextGen/lwbin/scripts/SNP_PCGP_Germ_High20_check_v2/SNV_background_checking_anno_v4_with_COSMIC.pl
+LIFTOVER	/nfs_exports/apps/gnu-apps/NextGen/lwbin/scripts/LiftOver/support/routine/LiftOver_SNV.pl

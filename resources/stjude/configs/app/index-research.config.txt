@@ -1,0 +1,7 @@
+# Index and QC (research) config
+
+# Array-for-commandfile script	
+AFC_SCRIPT	bsub_array_for_cmdfile.sh
+
+# Steps in this pipeline
+AFC_STEPS	01 02

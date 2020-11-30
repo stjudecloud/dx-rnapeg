@@ -1,0 +1,13 @@
+AFC_ARGS_01	-app python-3.4.2
+AFC_ARGS_02	-app python-3.4.2
+AFC_ARGS_03	-app python-3.4.2
+AFC_ARGS_04	-app python-3.4.2
+AFC_ARGS_05	-app python-3.4.2
+AFC_ARGS_06	-app python-3.4.2
+AFC_ARGS_07	-app python-3.4.2
+AFC_ARGS_08	-app python-3.4.2
+AFC_ARGS_09	-app python-3.4.2
+AFC_ARGS_10	-app python-3.4.2
+AFC_ARGS_11	-app python-3.4.2
+AFC_ARGS_12	-app python-3.4.2
+SNPSHOT_DIR	MUSTOVERRIDE

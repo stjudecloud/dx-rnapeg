@@ -1,0 +1,8 @@
+# Sequence analysis pipeline configuration for PCGP project	
+	
+# List of emails to be notified when mapping, coverage, SNP, and CREST completes	
+PROJECT_MAPPING_NOTIFICATIONS_EMAIL_LIST	john.easton@stjude.org,bhavin.vadodaria@stjude.org,kristy.boggs@stjude.org,donald.yergeau@stjude.org,heather.mulder@stjude.org,ying.shao@stjude.org,1PCGP@stjude.org
+PROJECT_COV_COMPLETION_NOTIFICATION_EMAIL_LIST	john.easton@stjude.org,bhavin.vadodaria@stjude.org
+PROJECT_SNV_COMPLETION_NOTIFICATION_EMAIL_LIST	
+PROJECT_CONSERTING_COMPLETION_NOTIFICATION_EMAIL_LIST	xiang.chen@stjude.org
+PROJECT_CREST_COMPLETION_NOTIFICATION_EMAIL_LIST	

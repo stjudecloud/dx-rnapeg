@@ -1,0 +1,9 @@
+AFC_ARGS_01	-q clingen
+AFC_ARGS_02	-M 8000 -R "rusage[mem=8000]" -q clingen
+AFC_ARGS_03	-q clingen -app python-3.4.2
+AFC_ARGS_04	-q clingen -app python-3.4.2
+AFC_ARGS_05	-q clingen -app python-3.4.2
+AFC_ARGS_06	-q clingen
+AFC_ARGS_07	-q clingen
+AFC_ARGS_08	-q clingen
+AFC_ARGS_09	-q clingen

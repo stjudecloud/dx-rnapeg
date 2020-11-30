@@ -1,0 +1,1 @@
+#chrA	posA	ortA	SClipA	chrB	posB	ortB	SClipB	Type	CoverA	CoverB	ConsLenA	ConsLenB	MeanPIDA	PctRepA	MeanPIDB	PctRepB	ConsMapStart	ConsMapStartChr	ConsMapStartPos	ConsMapEnd	ConsMapEndChr	ConsMapEndPos	ConsensusSeq	InsSeq	MicroHomo	GeneA	GeneB

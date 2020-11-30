@@ -1,0 +1,3 @@
+AFC_ARGS_01	-app cicero-post-fb 
+AFC_ARGS_02	-app cicero-post-aac
+AFC_ARGS_03	-app medals

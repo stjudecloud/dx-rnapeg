@@ -1,0 +1,20 @@
+# Directory shuffling options
+# ALT_ROOT = alternate path for locating directories
+# DEFAULT = whether or not to use ALT_ROOT by default
+# DIRS = list of directories to locate on ALT_ROOT if enabled
+ALT_ROOT	
+DEFAULT	1
+DIRS	intmd,output,workspace
+ARCHIVE	
+MODE	
+
+# Commands for various actions
+
+# Freeze, unfreeze, and purge: all get passed one paramter, which is a path
+FREEZE_FILE	freezeFile.sh
+UNFREEZE_FILE	unfreezeFile.sh
+IS_FROZEN_FILE	true
+FREEZE_DIR	freezeDir.sh
+UNFREEZE_DIR	unfreezeDir.sh
+IS_FROZEN_DIR	isFrozenDir.sh
+PURGE_DIR	bsub -o /dev/null rm -rf

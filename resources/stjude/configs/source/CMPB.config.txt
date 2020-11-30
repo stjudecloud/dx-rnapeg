@@ -1,0 +1,4 @@
+# Sequence analysis pipeline configuration for sequences obtained from CMPB Genomics Laboratory
+
+# Directory of sequencing runs
+SEQ_RUN_DIR	/nfs_exports/genomes/1/archive/projects/runs

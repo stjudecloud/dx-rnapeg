@@ -1,0 +1,6 @@
+# Coverage-post config
+
+# Extra submission arguments
+AFC_ARGS_01	-app coverage-post-presum
+AFC_ARGS_02	-app coverage-post-summary
+AFC_ARGS_03	

@@ -1,0 +1,56 @@
+# BDGPr5 config	
+GENOME_ROOT	/research/rgs01/resgen/prod/tartan/index/reference/Drosophila_melanogaster/BDGPr5
+FASTA	/research/rgs01/resgen/prod/tartan/index/reference/Drosophila_melanogaster/BDGPr5/FASTA/BDGPr5.fa
+FASTA_CHR	/research/rgs01/resgen/prod/tartan/index/reference/Drosophila_melanogaster/BDGPr5/FASTA/chromosomes
+NIB	/research/rgs01/resgen/prod/tartan/index/reference/Drosophila_melanogaster/BDGPr5/NIB
+TWOBIT	/research/rgs01/resgen/prod/tartan/index/reference/Drosophila_melanogaster/BDGPr5/2BIT/BDGPr5.2bit
+DBSNP	
+#(infer as $FASTA.dict) SAMHEADER	$GENOME_ROOT/SUPPORT/seqdict.sam
+CHR_LENGTHS	/research/rgs01/resgen/prod/tartan/index/reference/Drosophila_melanogaster/BDGPr5/SUPPORT/chromosome_lengths.txt
+CHR_LENGTHS_DELIM	 
+CHR_SIZES	/research/rgs01/resgen/prod/tartan/index/reference/Drosophila_melanogaster/BDGPr5/SUPPORT/canonical_chr_sizes.txt
+CHR_INFO	/research/rgs01/resgen/prod/tartan/index/reference/Drosophila_melanogaster/BDGPr5/SUPPORT/chromosomes.txt
+CHR2GENE	/research/rgs01/resgen/prod/tartan/index/reference/Drosophila_melanogaster/BDGPr5/SUPPORT/chr2gene
+BLAT_HOST	
+BLAT_PORT	
+EXON2GENE	
+JUNCTION2GENE	
+COMBINED_REFFLAT	/research/rgs01/resgen/prod/tartan/index/reference/Drosophila_melanogaster/BDGPr5/mRNA/Combined/all_refFlats.txt
+# just one source for now: UCSC's refGene.txt seems to contain
+# the same data in a slightly different format
+GENE_INFO	
+	
+# This value is also used twice down below, but must be specified each time in	
+# case of selective loading	
+REFSEQ_REFFLAT	/research/rgs01/resgen/prod/tartan/index/reference/Drosophila_melanogaster/BDGPr5/mRNA/RefSeq/refFlat-sharp.txt
+
+# Specify which DBs to use for this genome  (required variable)
+DB_USED	RefSeq.nm RefSeq.alt_exon STAR WG
+	
+ACEVIEW_NM_DB_FASTA	/research/rgs01/resgen/prod/tartan/index/reference/Drosophila_melanogaster/BDGPr5/mRNA/AceView/AceView.ucsc.lifted-nm.fa
+ACEVIEW_NM_BWA_DB	/research/rgs01/resgen/prod/tartan/index/reference/Drosophila_melanogaster/BDGPr5/mRNA/AceView/AceView.ucsc.lifted-nm.fa
+ACEVIEW_NM_REFFLAT	/research/rgs01/resgen/prod/tartan/index/reference/Drosophila_melanogaster/BDGPr5/mRNA/AceView/AceView.ucsc.lifted.txt
+ACEVIEW_NM_NAME_FMT	acc
+	
+REFSEQ_NM_DB_FASTA	/research/rgs01/resgen/prod/tartan/index/reference/Drosophila_melanogaster/BDGPr5/mRNA/RefSeq/refFlat-sharp-nm.fa
+REFSEQ_NM_BWA_DB	/research/rgs01/resgen/prod/tartan/index/reference/Drosophila_melanogaster/BDGPr5/mRNA/RefSeq/refFlat-sharp-nm.fa
+REFSEQ_NM_REFFLAT	/research/rgs01/resgen/prod/tartan/index/reference/Drosophila_melanogaster/BDGPr5/mRNA/RefSeq/refFlat-sharp.txt
+REFSEQ_NM_NAME_FMT	acc
+	
+REFSEQ_AE_DB_FASTA	/research/rgs01/resgen/prod/tartan/index/reference/Drosophila_melanogaster/BDGPr5/mRNA/RefSeq/refFlat-sharp-alt_exon.fa
+REFSEQ_AE_BWA_DB	/research/rgs01/resgen/prod/tartan/index/reference/Drosophila_melanogaster/BDGPr5/mRNA/RefSeq/refFlat-sharp-alt_exon.fa
+REFSEQ_AE_REFFLAT	/research/rgs01/resgen/prod/tartan/index/reference/Drosophila_melanogaster/BDGPr5/mRNA/RefSeq/refFlat-sharp.txt
+REFSEQ_AE_NAME_FMT	cust
+	
+WG_BWA_DB	/research/rgs01/resgen/prod/tartan/index/reference/Drosophila_melanogaster/BDGPr5/BWA/BDGPr5.fa
+	
+# STAR	
+WG_STAR_DB	/research/rgs01/resgen/prod/tartan/index/reference/Drosophila_melanogaster/BDGPr5/STAR
+	
+# Bowtie	
+WG_BOWTIE_DB	/research/rgs01/resgen/prod/tartan/index/reference/Drosophila_melanogaster/BDGPr5/BOWTIE/BDGPr5
+	
+# RNA-Seq mapping	
+WINDOWS	/research/rgs01/resgen/prod/tartan/index/reference/Drosophila_melanogaster/BDGPr5/SUPPORT/windows.txt
+MIN_EMPTY_SEU_FASTA	40
+MAX_EMPTY_SEU_FASTA	45

@@ -1,0 +1,11 @@
+# VIS read preprocessing config
+
+# Extra submission arguments
+AFC_ARGS_01	-app picard-lsf
+AFC_ARGS_04	-app cutadapt
+AFC_ARGS_05	-app picard-lsf
+AFC_ARGS_06	-app picard-lsf
+AFC_ARGS_07	-app cutadapt
+AFC_ARGS_08	-app picard-lsf
+AFC_ARGS_09	-app picard-lsf
+AFC_ARGS_10	-app picard-lsf -J SplitSam
