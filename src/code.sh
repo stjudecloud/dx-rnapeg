@@ -12,6 +12,11 @@ main() {
   echo "  [*] Downloading input files..." 
   dx-download-all-inputs --parallel > /dev/null
 
+  echo "  [*] Downloading reference files..." 
+  mkdir -p /stjude/reference/Homo_sapiens/${ref_name}/ 
+  dx download -r -o /stjude/reference/Homo_sapiens/${ref_name}/ project-F5444K89PZxXjBqVJ3Pp79B4:/global/reference/Homo_sapiens/${ref_name}/FASTA 
+  dx download -r -o /stjude/reference/Homo_sapiens/${ref_name}/ project-F5444K89PZxXjBqVJ3Pp79B4:/global/reference/Homo_sapiens/${ref_name}/mRNA
+
   ################
   # Housekeeping #
   ################

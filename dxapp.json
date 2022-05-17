@@ -114,7 +114,8 @@
     "distribution": "Ubuntu"
   },
   "access": {
-    "network": ["*"]
+    "network": ["*"],
+    "allProjects": "VIEW"
   },
   "name": "stjude_rnapeg",
   "title": "RNApeg (St. Jude)",
